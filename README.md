@@ -1,2 +1,2 @@
-# PythonPortfolio
-My portfolio web app when You see all my  working python project
+# Python Portfolio
+My portfolio web app where You see all my  working python project
