@@ -31,7 +31,13 @@ logger.debug((f"DF\n__________________________\n {df.columns}"))
 with col3:
     for index, row in df[:half_of_rows].iterrows():
         st.title(row['title'])
+        st.write(row['description'])
+        st.image('./images/' + row['image'])
+        st.write(f"[Source code]({row['url']})")
 
 with col4:
     for index, row in df[half_of_rows:].iterrows():
         st.title(row['title'])
+        st.write(row['description'])
+        st.image('./images/' + row['image'])
+        st.write(f"[Source code]({row['url']})")
