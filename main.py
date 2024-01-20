@@ -1,5 +1,6 @@
-import streamlit as st
 import pandas
+import streamlit as st
+
 import logger_utils
 
 logger = logger_utils.logger
@@ -25,14 +26,17 @@ col3, col4 = st.columns(2)
 
 df = pandas.read_csv('./data.csv', sep=';')
 half_of_rows = len(df.axes[0]) // 2
-logger.debug((f"DF\n__________________________\n {df.columns}"))
-
 
 with col3:
     for index, row in df[:half_of_rows].iterrows():
         st.title(row['title'])
         st.write(row['description'])
-        st.image('./images/' + row['image'])
+        st.image(f"./images/{row['image']}")
+
+        # Adds link to the working app
+        if str(row['app_url']) != 'nan':
+            st.write(f"[Working App]({row['app_url']})")
+
         st.write(f"[Source code]({row['url']})")
 
 with col4:
@@ -40,4 +44,9 @@ with col4:
         st.title(row['title'])
         st.write(row['description'])
         st.image('./images/' + row['image'])
+
+        # Adds link to the working app
+        if str(row['app_url']) != 'nan':
+            st.write(f"[Working App]({row['app_url']})")
+
         st.write(f"[Source code]({row['url']})")
