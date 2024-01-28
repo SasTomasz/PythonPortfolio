@@ -1,7 +1,7 @@
-import os
 import smtplib
 import ssl
 
+import streamlit as st
 from dotenv import load_dotenv
 
 import logger_utils
@@ -12,9 +12,9 @@ logger = logger_utils.logger
 
 host = 'smtp.gmail.com'
 port = 587
-password = os.getenv('APP_PASSWORD')
-email_sender = os.getenv('LOGIN')
-email_receiver = os.getenv('MY_EMAIL')
+password = st.secrets["APP_PASSWORD"]
+email_sender = st.secrets["LOGIN"]
+email_receiver = st.secrets["MY_EMAIL"]
 message = """\
 Subject: Hello from python
 This is a message sending with python code

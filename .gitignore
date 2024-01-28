@@ -8,3 +8,4 @@
 /.idea/inspectionProfiles/Project_Default.xml
 /logs.log
 /.env
+/.streamlit/secrets.toml
