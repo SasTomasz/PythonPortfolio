@@ -2,11 +2,8 @@ import smtplib
 import ssl
 
 import streamlit as st
-from dotenv import load_dotenv
 
 import logger_utils
-
-load_dotenv()
 
 logger = logger_utils.logger
 
