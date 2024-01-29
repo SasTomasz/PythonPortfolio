@@ -35,7 +35,12 @@ def send_email():
 
 def set_email_content(user_email, user_message):
     global message
-    message = f"Subject: web-form from {user_email}\n{user_message}"
+    message = f"""\
+Subject: web-form from PythonPortfolio project
+
+From: {user_email}
+
+{user_message}"""
 
 
 if __name__ == "__main__":
