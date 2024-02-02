@@ -1,7 +1,7 @@
 title;description;url;image;app_url
 Todo App;A distraction-free web app to help you focus on creating and completing tasks.;https://github.com/SasTomasz/todo_app;1.png;https://todo-ts.streamlit.app/
 Portfolio Website;A website built entirely in Python to showcase coding projects and apps.;https://github.com/SasTomasz/ExampleCompanyWebsite;2.png;https://ts-company.streamlit.app/
-PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;https://github.com/SasTomasz;3.png;
+PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;https://github.com/SasTomasz/PdfGenerator;3.png;
 PDF Invoices;A script that reads invoice records from Excel files and automatically generates PDF invoices.;https://github.com/SasTomasz;4.png;
 Positive News Site;A website that gets data from a news API and uses sentiment analysis to publish only positive news.;https://github.com/SasTomasz;5.png;
 Weather API;A REST API built with Python and Flask to serve historical weather data for various cities.;https://github.com/SasTomasz;6.png;
